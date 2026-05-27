@@ -1,0 +1,5 @@
+Public/
+├── index.html      Start page / presentation
+├── menu.html       Dynamic menu from API
+├── reviews.html    Customer reviews
+└── contact.html    Contact form

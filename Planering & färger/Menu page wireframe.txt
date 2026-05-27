@@ -1,0 +1,28 @@
+------------------------------------------------
+HEADER
+Nav
+------------------------------------------------
+
+PAGE TITLE
+"Meny"
+
+WEEKEND SPECIAL
+Card fetched from API
+
+------------------------------------------------
+
+STANDARD MENU
+Tacos
+Nachos
+Quesadillas
+Drinks
+
+Each item:
+- name
+- description
+- fillings/options
+- price
+
+------------------------------------------------
+FOOTER
+------------------------------------------------

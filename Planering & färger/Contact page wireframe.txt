@@ -1,0 +1,20 @@
+------------------------------------------------
+HEADER
+Nav
+------------------------------------------------
+
+PAGE TITLE
+"Kontakt"
+
+Contact text:
+Questions, collaborations, event booking etc.
+
+FORM
+Name
+Email
+Message
+Submit button
+
+------------------------------------------------
+FOOTER
+------------------------------------------------

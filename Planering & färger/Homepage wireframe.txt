@@ -1,0 +1,34 @@
+------------------------------------------------
+HEADER
+Tankad Tacos logo/name
+Nav: Start | Meny | Recensioner | Kontakt
+------------------------------------------------
+
+MAIN SECTION
+"Tankad Tacos"
+Late-night taco truck in Stockholm
+
+Short description:
+Tacos, nachos and quesadillas near Stockholm nightlife.
+
+Button/link:
+"Se menyn"
+
+Weekend location:
+"Denna helg: Södermalm / nära klubbområde"
+
+------------------------------------------------
+
+ABOUT SECTION
+Short company presentation
+
+------------------------------------------------
+
+PREVIEW SECTION
+Small preview of menu or weekend special
+
+------------------------------------------------
+
+FOOTER
+Contact info / social text / opening hours
+------------------------------------------------

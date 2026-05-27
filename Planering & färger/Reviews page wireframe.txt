@@ -1,0 +1,20 @@
+------------------------------------------------
+HEADER
+Nav
+------------------------------------------------
+
+PAGE TITLE
+"Recensioner"
+
+FORM
+Name
+Rating
+Comment
+Submit button
+
+REVIEWS LIST
+Existing reviews fetched from API
+
+------------------------------------------------
+FOOTER
+------------------------------------------------
