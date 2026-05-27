@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logga in | Tankad Tacos</title>
+  <script type="module" src="/src/js/login.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Tankad Tacos</a>
+
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="register.html">Registrera</a>
+        <a href="login.html">Logga in</a>
+        <a href="dashboard.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Logga in</h1>
+      <p>Logga in för att komma åt den skyddade adminpanelen.</p>
+
+      <form id="loginForm">
+        <div>
+          <label for="username">Användarnamn</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+          <label for="password">Lösenord</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit">Logga in</button>
+      </form>
+
+      <p id="message" class="message"></p>
+
+      <p>
+        Har du inget konto?
+        <a href="register.html">Registrera dig här</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

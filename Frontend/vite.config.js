@@ -1,0 +1,15 @@
+const { defineConfig } = require("vite");
+const { resolve } = require("path");
+
+module.exports = defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        register: resolve(__dirname, "register.html"),
+        login: resolve(__dirname, "login.html"),
+        dashboard: resolve(__dirname, "dashboard.html")
+      }
+    }
+  }
+});

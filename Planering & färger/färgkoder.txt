@@ -1,0 +1,20 @@
+Vibe:
+retro food truck
+Stockholm nightlife
+spicy street food
+fun but still readable
+
+#B7410E - Rust
+#FFFACC - Pale yellow
+#FF9A6B - Orangey Coral
+#C1DEEF - Icy Blue
+#CC3737 - Hot Pepper Red
+#32536B - Dark Blue
+
+Color                                      Use
+#B7410E Rust                        Main brand color, nav/sidebar, headers, buttons 
+#CC3737 Hot Pepper Red    Accent color, highlights, warnings, important buttons
+#FF9A6B Orangey Coral      Secondary buttons, cards, hover states                
+#FFFACC Pale Yellow           Background, light cards, friendly contrast            
+#32536B Dark Blue               Text, footer, admin/dashboard accents                 
+#C1DEEF Icy Blue                  Small accent panels, info boxes, form focus states
