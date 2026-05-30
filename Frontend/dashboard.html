@@ -6,9 +6,10 @@
   <title>Adminpanel | Tankad Tacos</title>
   <script type="module" src="/src/js/dashboard.js"></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
+  <header class="header">
+    <div class="headerInner">
       <a href="index.html" class="logo">Tankad Tacos</a>
 
       <nav>
@@ -28,11 +29,74 @@
       <button id="logoutBtn" type="button">Logga ut</button>
     </section>
 
-    <section class="dashboard-grid" id="dashboardContent">
-      <!-- Protected data from backend will be written here -->
+    <section class="card">
+      <h2 id="formTitle">Lägg till menyobjekt</h2>
+      <p>
+        Här kan personal lägga till nya menyobjekt eller ändra befintliga objekt
+        som visas på den publika webbplatsen.
+      </p>
+
+      <form id="menuForm">
+        <input type="hidden" id="menuItemId">
+
+        <div>
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="category">Kategori</label>
+          <input type="text" id="category" name="category" required placeholder="Till exempel Mat, Dryck eller Weekend special">
+        </div>
+
+        <div>
+          <label for="description">Beskrivning</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <div>
+          <label for="fillings">Fyllningar eller alternativ</label>
+          <input type="text" id="fillings" name="fillings" placeholder="Chicken, Asada, Al Pastor">
+          <small>Skriv alternativen separerade med kommatecken.</small>
+        </div>
+
+        <div>
+          <label for="price">Pris</label>
+          <input type="number" id="price" name="price" required min="0">
+        </div>
+
+        <div class="checkboxGroup">
+          <label>
+            <input type="checkbox" id="isSpecial" name="isSpecial">
+            Weekend special
+          </label>
+
+          <label>
+            <input type="checkbox" id="isAvailable" name="isAvailable" checked>
+            Synlig på publika webbplatsen
+          </label>
+        </div>
+
+        <div class="btnGroup">
+          <button type="submit" id="submitButton">Spara menyobjekt</button>
+          <button type="button" id="cancelBtn" class="secondBtn" hidden>Avbryt ändring</button>
+        </div>
+      </form>
+
+      <p id="message" class="message"></p>
     </section>
 
-    <p id="message" class="message"></p>
+    <section class="card">
+      <h2>Nuvarande meny</h2>
+      <p>
+        Menyobjekten hämtas från databasen. De kan ändras eller raderas via knapparna nedan.
+      </p>
+
+      <div id="menuList" class="menuList">
+        <!-- Menu items from backend will be written here -->
+      </div>
+    </section>
   </main>
+
 </body>
 </html>

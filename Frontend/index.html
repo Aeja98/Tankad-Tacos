@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tankad Tacos</title>
+  <title>Tankad Tacos | Admin</title>
   <script type="module" src="/src/js/main.js"></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
+  <header class="header">
+    <div class="headerInner">
       <a href="index.html" class="logo">Tankad Tacos</a>
 
       <nav>
@@ -22,18 +23,23 @@
 
   <main>
     <section class="hero">
-      <h1>Tankad Tacos</h1>
+      <h1>Tankad Tacos Admin</h1>
       <p>
-        En fiktiv taco truck i Stockholm som serverar tacos, nachos,
-        quesadillas och dryck sent på kvällen nära stadens nattliv.
-      </p>
-      <p>
-        Den här webbplatsen är en del av en autentiseringslösning där
-        personal kan registrera sig, logga in och komma åt skyddad admin-data.
+        Det här är administrationssidan för Tankad Tacos, en fiktiv taco truck
+        i Stockholm som serverar tacos, nachos, quesadillas och dryck sent på kvällen.
       </p>
 
-      <a href="login.html">Logga in till adminpanelen</a>
+      <p>
+        Här kan personal logga in för att hantera menyobjekt som sedan visas
+        dynamiskt på den publika webbplatsen.
+      </p>
+
+      <div class="btnGroup">
+        <a href="login.html" class="linkBtn">Logga in</a>
+        <a href="register.html" class="linkBtn secondLinkBtn">Registrera konto</a>
+      </div>
     </section>
   </main>
+  
 </body>
 </html>

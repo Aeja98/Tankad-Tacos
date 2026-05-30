@@ -1,12 +1,12 @@
 @use "variables" as *;
 
-.site-header {
+.header {
   background-color: $nav-color;
   color: $nav-text;
   padding: 1rem;
   border-bottom: 5px solid $coral;
 
-  .header-inner {
+  .headerInner {
     width: min(100% - 2rem, 1000px);
     margin: 0 auto;
     display: flex;
@@ -42,12 +42,40 @@
   }
 }
 
+.linkBtn {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 999px;
+  background-color: $button-background;
+  color: $button-text;
+  padding: 0.8rem 1.3rem;
+  font-weight: 800;
+
+  &:hover {
+    background-color: $button-hover;
+    color: $button-text;
+  }
+}
+
+.secondLinkBtn {
+  background-color: $dark-blue;
+
+  &:hover {
+    background-color: $coral;
+    color: $dark-blue;
+  }
+}
+
 .card {
   background-color: $card-background;
   border: 2px solid $card-border;
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 4px 0 rgba(50, 83, 107, 0.15);
+}
+
+.card + .card {
+  margin-top: 1.5rem;
 }
 
 .hero {
@@ -57,19 +85,13 @@
   padding: 2rem;
 }
 
-.dashboard-grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.menu-list {
+.menuList {
   display: grid;
   gap: 1rem;
   padding: 0;
-  list-style: none;
 }
 
-.menu-list li {
+.menuItemCard {
   background-color: $icy-blue;
   border-left: 6px solid $pepper-red;
   border-radius: 0.8rem;
@@ -81,6 +103,16 @@
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: 0 0 0 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    .headerInner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

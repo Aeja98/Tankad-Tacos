@@ -1,0 +1,40 @@
+------------------------------------------------
+HEADER
+Nav
+------------------------------------------------
+
+Adminpanel
+
+Welcome message
+Logout button
+------------------------------------------------
+
+Add/edit menu item form
+
+- Name
+- Category
+- Description
+- Fillings/options
+- Price
+- Weekend special checkbox
+- Available checkbox
+
+[Save menu item]
+[Cancel edit] only visible while editing
+------------------------------------------------
+
+Current menu items
+
+Card/table for each item:
+- Name
+- Category
+- Description
+- Fillings/options
+- Price
+- Special/available status
+- Edit button
+- Delete button
+
+------------------------------------------------
+FOOTER
+------------------------------------------------
