@@ -1,6 +1,6 @@
 import "../scss/main.scss";
 
-const API_URL = "https://autentisering-backend.onrender.com";
+const API_URL = "http://localhost:3000";
 
 const registerForm = document.querySelector("#registerForm");
 const messageElement = document.querySelector("#message");
