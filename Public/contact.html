@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | Tankad Tacos</title>
+  <script type="module" src="/src/js/contact.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerInner">
+      <a href="index.html" class="logo">Tankad Tacos</a>
+
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="menu.html">Meny</a>
+        <a href="reviews.html">Recensioner</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Kontakt</h1>
+      <p>
+        Har du frågor, vill boka Tankad Tacos till ett event eller lämna ett meddelande?
+        Fyll i formuläret nedan.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Skicka meddelande</h2>
+
+      <form id="contactForm">
+        <div>
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">E-post</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="messageText">Meddelande</label>
+          <textarea id="messageText" name="messageText" required></textarea>
+        </div>
+
+        <button type="submit">Skicka meddelande</button>
+      </form>
+
+      <p id="message" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Kontaktuppgifter</h2>
+      <p><strong>Telefon:</strong> 070-123 45 67</p>
+      <p><strong>E-post:</strong> info@tankadtacos.se</p>
+      <p><strong>Plats:</strong> Stockholm, nära nattliv och evenemang.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h2>Tankad Tacos</h2>
+      <ul>
+        <li>Telefon: 070-123 45 67</li>
+        <li>E-post: info@tankadtacos.se</li>
+        <li>Stockholm, Sverige</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Snabblänkar</h2>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="reviews.html">Recensioner</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

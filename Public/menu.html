@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meny | Tankad Tacos</title>
+  <script type="module" src="/src/js/menu.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerInner">
+      <a href="index.html" class="logo">Tankad Tacos</a>
+
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="menu.html">Meny</a>
+        <a href="reviews.html">Recensioner</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Meny</h1>
+      <p>
+        Här visas Tankad Tacos meny. Informationen hämtas från vår REST-webbtjänst och uppdateras via adminpanelen.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Weekend special</h2>
+      <div id="weekendSpecial" class="menuList">
+        <p>Laddar weekend special...</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Standardmeny</h2>
+      <div id="standardMenu" class="menuList">
+        <p>Laddar meny...</p>
+      </div>
+    </section>
+
+    <p id="message" class="message"></p>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h2>Tankad Tacos</h2>
+      <ul>
+        <li>Telefon: 070-123 45 67</li>
+        <li>E-post: info@tankadtacos.se</li>
+        <li>Stockholm, Sverige</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Snabblänkar</h2>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="reviews.html">Recensioner</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>
