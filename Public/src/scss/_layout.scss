@@ -116,3 +116,43 @@
     }
   }
 }
+
+.footer {
+  width: min(100% - 2rem, 1000px);
+  margin: 3rem auto 0;
+  padding: 2rem;
+  background-color: $dark-blue;
+  color: $pale-yellow;
+  border-radius: 1rem 1rem 0 0;
+  display: grid;
+  gap: 1.5rem;
+
+  h2 {
+    color: $pale-yellow;
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+
+  a {
+    color: $pale-yellow;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
