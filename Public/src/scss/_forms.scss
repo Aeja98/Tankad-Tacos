@@ -1,0 +1,95 @@
+@use "variables" as *;
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+label {
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid $card-border;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+
+  &:focus {
+    outline: 3px solid $icy-blue;
+    border-color: $dark-blue;
+  }
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkboxGroup {
+  display: grid;
+  gap: 0.5rem;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: auto;
+  }
+}
+
+small {
+  display: block;
+  margin-top: 0.3rem;
+  color: $dark-blue;
+}
+
+button {
+  width: fit-content;
+  border: none;
+  border-radius: 999px;
+  background-color: $button-background;
+  color: $button-text;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.secondBtn {
+  background-color: $dark-blue;
+
+  &:hover {
+    background-color: $coral;
+    color: $dark-blue;
+  }
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.message.error {
+  color: $error-color;
+}
+
+.message.success {
+  color: $success-color;
+}
