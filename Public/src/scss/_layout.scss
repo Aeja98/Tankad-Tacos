@@ -118,18 +118,24 @@
 }
 
 .footer {
-  width: min(100% - 2rem, 1000px);
-  margin: 3rem auto 0;
-  padding: 2rem;
+  margin-top: 3rem;
+  padding: 1.25rem 1rem;
+  grid-template-columns: 1fr 1fr;
   background-color: $dark-blue;
   color: $pale-yellow;
-  border-radius: 1rem 1rem 0 0;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
+  font-size: 0.7rem;
+
+    div:last-child {
+    justify-self: end;
+    text-align: right;
+  }
 
   h2 {
     color: $pale-yellow;
-    margin-top: 0;
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
   }
 
   ul {
@@ -138,12 +144,9 @@
     margin: 0;
   }
 
-  li + li {
-    margin-top: 0.4rem;
-  }
-
   a {
     color: $pale-yellow;
+    font-weight: 500;
 
     &:hover {
       color: $coral;
@@ -151,8 +154,9 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .footer {
-    grid-template-columns: 1fr 1fr;
+    h2 {font-size: 1.2rem;}
+    font-size: 0.9rem;
   }
 }
